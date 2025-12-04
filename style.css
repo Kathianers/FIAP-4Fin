@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --verde-fundo: #F1F8E9; 
+    --verde-principal: #2E7D32; 
+    --verde-destaque: #4CAF50; 
+    --branco: #ffffff;
+    --texto-escuro: #1B5E20; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--verde-fundo); 
+    color: #333;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: var(--branco);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.08); 
+    border-bottom: 2px solid #C8E6C9; 
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.card-action, .card {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: var(--branco);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+
+.card-action:hover {
+    transform: translateY(-5px);
+    border-color: var(--verde-destaque);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.2);
+    background-color: #F9FBE7; 
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #E8F5E9; 
+    color: var(--verde-principal);
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.card-action:hover .icon-circle {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+}
+
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    color: var(--texto-escuro) !important; 
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-success-custom {
+    color: var(--verde-principal) !important;
+}
+
+a.text-success-custom:hover {
+    color: var(--verde-destaque) !important;
+    text-decoration: underline !important;
+}
+
+.bg-light-green {
+    background: linear-gradient(180deg, #ffffff 0%, #DCEDC8 100%);
+    border: 1px solid #C5E1A5;
+}
+
+.bg-chart {
+    background-color: var(--verde-principal);
+    border-radius: 4px 4px 0 0;
+}
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-success {
+    color: #198754 !important;
+}
